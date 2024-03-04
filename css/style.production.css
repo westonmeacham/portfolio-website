@@ -242,10 +242,10 @@ table {
     }
 
     .grid_overlay {
-    background-color: rgba(255, 255, 255, 0.7); /* Adjust the color and transparency as needed */
+    background-color: rgba(255, 255, 255, 0.7);
     display: none; /* Initially hidden */
-    color: #004d7d; /* Text color for overlay content */
-    padding: 20px; /* Adjust padding as needed */
+    color: #004d7d;
+    padding: 20px;
     box-sizing: border-box;
     margin-top: 2%;
     border-radius: 5px;
@@ -256,7 +256,7 @@ table {
     grid-row: 1 / 2;
     }
 
-.grid__item:last-child {
+    .grid__item:last-child {
     grid-column-start: 1;
     grid-column-end: 4;
     }
