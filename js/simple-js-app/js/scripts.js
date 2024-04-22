@@ -1,8 +1,23 @@
-pokemonList=[
-    {name: "pikachu", height: "3", type: ["lightning","speed"]},
-    {name: "squirtle", height: "4", type: ["water","defense"]},
+let pokemonList = [
+    {name: "Pikachu", height: "3", type: ["lightning","speed"]},
+    {name: "Squirtle", height: "5", type: ["water","defense"]},
     {name: "Mewtwo", height: "12", type: ["psychic","legendary"]}
 ];
+
+for(let i = 0; i < pokemonList.length; i++){
+    if (pokemonList[i].height <12 && pokemonList[i].height >3){
+        document.write(pokemonList[i].name + ' height: 5 ');
+    }else if (pokemonList[i].height <4){
+        document.write(pokemonList[i].name + ' height: 3 ');
+    }else {
+        document.write(pokemonList[i].name + ' height: 12 ' + 'Wow, that is big!');
+    }
+}
+
+
+
+
+
 
 /* Just an example of an erray with a loop
 let personAge = [
