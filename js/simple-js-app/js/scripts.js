@@ -21,13 +21,58 @@ print();
 
 
 
-/* This is another example of a function
+/*
+A example of a Pure Function
+let age = 10;
+
+function getNewAge(age) {
+    age = age + 1;
+    return age;
+}
+
+console.log(getNewAge(age)); //returns 11
+console.log(age); //returns 10
+*/
+
+/*
+example of a Callback Functions (I do not understand this one at all)
+function functionOne(param) {
+ return param;
+ };
+
+function functionTwo(param) {
+   // some code
+  return param + 2;
+}
+console.log(functionOne(2)); // returns 2
+
+console.log(functionTwo(functionOne(2))); // functionTwo adds 2 to the result of functionOne and returns 4
+*/
+
+/* Two examples of an Anonymous Function
+let Message = function (){
+    console.log("Hello World!")
+};
+
+Message();
+
+or
+
+let sayHello = function (firstName) {
+    console.log("Hello " + firstName);
+};
+
+sayHello("Bobby");
+*/
+
+/* This is another example of a function with reutrn Statement
 function Sum(val1, val2) {
     return val1 + val2;
 }
 
 let result = Sum(5,20); 
 console.log(result);
+*/
 
 /* This is another example of a function 
 function greetingMessage(firstName, lastName) {
