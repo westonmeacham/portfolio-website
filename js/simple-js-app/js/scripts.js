@@ -4,6 +4,7 @@ let pokemonList = [
     {name: "Mewtwo", height: "12", type: ["psychic","legendary"]}
 ];
 
+function print(){
 for(let i = 0; i < pokemonList.length; i++){
     if (pokemonList[i].height <12 && pokemonList[i].height >3){
         document.write("<p>" + pokemonList[i].name + ' height: 5 ' + "</p>");
@@ -13,14 +14,37 @@ for(let i = 0; i < pokemonList.length; i++){
         document.write("<p>" + pokemonList[i].name + ' height: 12 ' + 'Wow, that is big!' + "</p>");
     }
 }
-/*
+}
+
+print();
+print();
+
+
+
+/* This is another example of a function
+function Sum(val1, val2) {
+    return val1 + val2;
+}
+
+let result = Sum(5,20); 
+console.log(result);
+
+/* This is another example of a function 
+function greetingMessage(firstName, lastName) {
+    console.log("Hello, My name is " + firstName + " " + lastName);
+    ducument.write("Hello , My name is " + firstName + " " + lastName)
+}
+
+greetingMessage("Brad", "Pitt");
+greetingMessage("Nelson", "Mandela");
+*/
+
+
+/* This would list all of the names of the Pokemon
 for (let i = 0; i < pokemonList.length; i++){
     document.write("<p>" + pokemonList[i].name + "</p>")
 }
 */
-
-
-
 
 
 /* Just an example of an erray with a loop
