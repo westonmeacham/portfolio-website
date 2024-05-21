@@ -3,7 +3,7 @@ let pokemonList = [
     {name: "Squirtle", height: "5", type: ["water","defense"]},
     {name: "Mewtwo", height: "12", type: ["psychic","legendary"]}
 ];
-
+/* My later function
 function print(){
 for(let i = 0; i < pokemonList.length; i++){
     if (pokemonList[i].height <12 && pokemonList[i].height >3){
@@ -15,11 +15,132 @@ for(let i = 0; i < pokemonList.length; i++){
     }
 }
 }
+*/
+function myLoopFunction(user) {
+    console.log(user.name + ' is ' + user.height + ' feet tall! ');
+}
+pokemonList.forEach(myLoopFunction);
 
-print();
-print();
+/* let pokemonRepository = (function () {
+
+    let pokemonList = [
+        {
+            name: "Pikachu",
+            height: "3",
+            type: ["lightning", "speed"]
+        },
+        {
+            name: "Squirtle",
+            height: "5",
+            type: ["water", "defense"]
+        }
+        {
+            name: "Mewtow",
+            height: "12",
+            type: ["psychic", "legendary"]
+        }
+    ]
+
+    function getAll () {
+        return pokemonList;
+    }
+    function add (pokemon) {
+        pokemonList.push(pokemon);
+    }
+
+    return {
+        getAll: getAll,
+        add: add
+    }
+})()
 
 
+
+
+
+//////NOTES
+/*
+example of Function Composiotion
+let anne = {
+  name: 'Anne Smith',
+  age: 38,
+  hasChildren: false
+};
+function getAgeDescription(age) {
+  return age + ' years old';
+}
+function getChildrenDescription(hasChildren) {
+  return hasChildren ? 'has children' : 'has no children';
+}
+function getPersonDescription(person) {
+  let ageDescription = getAgeDescription(person.age);
+  let childrenDescription = getChildrenDescription(person.hasChildren);
+
+  return person.name + ', ' + ageDescription + ', ' + childrenDescription;
+}
+console.log(getPersonDescription(anne)); // Anne Smith, 38 years old, has no children
+ 
+More examples
+
+let add = (a,b,) => a + b;
+let mult = (a,b,) => a*b;
+
+console.log(add(2, mult(4,2))); // logs 10
+
+or 
+
+function getFullName(person){
+    return(person.firstName + " " + person.lastName);
+}
+
+let Character = {firstName: 'Homer', lastName: 'Simpson'}
+
+let fullName = getFullName(Character);
+
+console.log(fullName); // logs Homer Simpson
+*/
+
+/* examples of forEarch methods as functions
+let myArray = [1,2,3,4,5,6,7,8,9,10];
+
+//external function
+myArray.forEach(logToConsole);
+
+function logToConsole(item) {
+    console.log(item);
+}
+
+//internal anonymous function
+myArray.forEach(function(item)) {
+    console.log(item);
+}
+
+//arrow funtion
+myArray.forEach( item => console.log(item) );
+*/
+
+/* examples of fundtion for addition, subtraction, multiply and divide
+function add(num1, num2){
+  return num1 + num2;
+}
+
+function subtraction(num1, num2){
+  return num1 - num2;
+}
+
+function multiply(num1, num2){
+  return num1 * num2;
+}
+
+function divide(num1, num2){
+  if (num2 !==0){
+    return num1/num2;
+  }
+  else{
+    return "Not Allowed";
+  }
+}
+*/
 
 /*
 A example of a Pure Function
