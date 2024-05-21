@@ -21,7 +21,8 @@ function myLoopFunction(user) {
 }
 pokemonList.forEach(myLoopFunction);
 
-/* let pokemonRepository = (function () {
+/* IIFE code
+let pokemonRepository = (function () {
 
     let pokemonList = [
         {
@@ -53,7 +54,7 @@ pokemonList.forEach(myLoopFunction);
         add: add
     }
 })()
-
+*/
 
 
 
